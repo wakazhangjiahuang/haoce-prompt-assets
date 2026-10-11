@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "scope": "static_contract",
+  "mode": "template",
+  "prompt_sha256": "9a82743f2aa3d42424d8951ef7d7c0914b2fa63088c12bf6e1318e730fff16ba",
+  "variables": [
+    "主题",
+    "品牌"
+  ],
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "id": "per-item-limit",
+      "pass": true
+    },
+    {
+      "id": "no-fabrication",
+      "pass": true
+    }
+  ],
+  "semantic_review_required": true,
+  "model_run_performed": false,
+  "base_sha256": "694c2b358218750e8d41b389d996546e4bde41f7977a2498ae03174161e328e9",
+  "patches": [
+    {
+      "op": "replace",
+      "span": [
+        8,
+        14
+      ],
+      "reason": "按本次授权将数量固定为8",
+      "evidence": "当前任务明确要求：现在数量固定8，品牌和主题仍每次填写。"
+    },
+    {
+      "op": "replace",
+      "span": [
+        21,
+        42
+      ],
+      "reason": "明确字数口径、缺少产品资料时的行为和输出格式，并保留字数及事实禁令",
+      "evidence": "原稿给出每条50字与禁止编造产品事实，但未定义计数口径、资料不足行为和逐条输出方式。"
+    }
+  ],
+  "effective_contract": {
+    "version": 1,
+    "syntax": "mustache-simple",
+    "variables": {
+      "品牌": {
+        "type": "string",
+        "required": true
+      },
+      "主题": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "fixed_values": {
+      "数量": 8
+    },
+    "rules": [
+      {
+        "id": "per-item-limit",
+        "kind": "contains",
+        "text": "每条不超过50字"
+      },
+      {
+        "id": "no-fabrication",
+        "kind": "contains",
+        "text": "禁止编造产品事实"
+      }
+    ],
+    "relations": []
+  },
+  "authorization_review_required": true,
+  "candidate_file": "candidate.txt"
+}

@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "scope": "static_contract",
+  "mode": "template",
+  "prompt_sha256": "6f9fa7acf254f3d606c969434389988fe5bcbd2d4e275b0589f3a80a33d91574",
+  "variables": [
+    "主题方向",
+    "元素配置",
+    "分辨率与格式",
+    "密度与留白",
+    "排布要求",
+    "数量",
+    "文字要求",
+    "比例",
+    "用途",
+    "背景",
+    "补充要求",
+    "角色身份关系",
+    "配色要求"
+  ],
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "id": "independent",
+      "pass": true
+    },
+    {
+      "id": "no-grid",
+      "pass": true
+    },
+    {
+      "id": "seams",
+      "pass": true
+    }
+  ],
+  "semantic_review_required": true,
+  "model_run_performed": false
+}

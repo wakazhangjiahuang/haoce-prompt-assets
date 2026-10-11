@@ -1,0 +1,68 @@
+{
+  "case": "variable-fix",
+  "scope": "static_contract",
+  "result": {
+    "ok": true,
+    "scope": "static_contract",
+    "mode": "template",
+    "prompt_sha256": "4ec4e98faef1f959d2f4897b9914df1ba42911bf3dd07f11a04181a7e579634a",
+    "variables": [
+      "主题",
+      "品牌"
+    ],
+    "errors": [],
+    "warnings": [],
+    "checks": [
+      {
+        "id": "length",
+        "pass": true
+      },
+      {
+        "id": "facts",
+        "pass": true
+      }
+    ],
+    "semantic_review_required": true,
+    "model_run_performed": false,
+    "base_sha256": "694c2b358218750e8d41b389d996546e4bde41f7977a2498ae03174161e328e9",
+    "patches": [
+      {
+        "op": "replace",
+        "span": [
+          8,
+          14
+        ],
+        "reason": "用户指定固定数量",
+        "evidence": "示范用户指令：数量固定8，品牌和主题仍每次填写"
+      }
+    ],
+    "effective_contract": {
+      "version": 1,
+      "variables": {
+        "品牌": {
+          "type": "string"
+        },
+        "主题": {
+          "type": "string"
+        }
+      },
+      "rules": [
+        {
+          "id": "length",
+          "kind": "contains",
+          "text": "每条不超过50字"
+        },
+        {
+          "id": "facts",
+          "kind": "contains",
+          "text": "禁止编造产品事实"
+        }
+      ],
+      "fixed_values": {
+        "数量": 8
+      }
+    },
+    "authorization_review_required": true
+  },
+  "model_run_performed": false
+}

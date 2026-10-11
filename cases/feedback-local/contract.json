@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "variables": {},
+  "rules": [
+    {
+      "id": "count",
+      "kind": "contains",
+      "text": "10张"
+    },
+    {
+      "id": "ratio",
+      "kind": "contains",
+      "text": "1:1"
+    },
+    {
+      "id": "bg",
+      "kind": "contains",
+      "text": "白底"
+    },
+    {
+      "id": "role",
+      "kind": "contains",
+      "text": "不同原创角色"
+    },
+    {
+      "id": "grid",
+      "kind": "contains",
+      "text": "禁止合并、合集、九宫格"
+    }
+  ]
+}

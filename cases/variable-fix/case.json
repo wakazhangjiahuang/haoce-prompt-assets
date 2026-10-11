@@ -1,0 +1,12 @@
+{
+  "id": "variable-fix",
+  "status": "candidate_static_checked",
+  "evidence_source": "synthetic_maintenance_example",
+  "original": "original.txt",
+  "contract": "contract.json",
+  "changes": "changes.json",
+  "candidate": "candidate-v1.txt",
+  "candidate_contract": "candidate.contract.json",
+  "approved_master": false,
+  "model_outputs_available": false
+}

@@ -1,0 +1,41 @@
+test_candidate_hard_failure_blocks (test_prompt_tools.EvidenceCases.test_candidate_hard_failure_blocks) ... ok
+test_changed_output_hash_rejected (test_prompt_tools.EvidenceCases.test_changed_output_hash_rejected) ... ok
+test_cross_model_difference_is_confounded (test_prompt_tools.EvidenceCases.test_cross_model_difference_is_confounded) ... ok
+test_evidence_records_do_not_prove_improvement (test_prompt_tools.EvidenceCases.test_evidence_records_do_not_prove_improvement) ... ok
+test_missing_output_evidence (test_prompt_tools.EvidenceCases.test_missing_output_evidence) ... ok
+test_path_cannot_escape_case_directory (test_prompt_tools.EvidenceCases.test_path_cannot_escape_case_directory) ... ok
+test_static_check_is_not_model_run (test_prompt_tools.EvidenceCases.test_static_check_is_not_model_run) ... ok
+test_text_is_not_image_evidence (test_prompt_tools.EvidenceCases.test_text_is_not_image_evidence) ... ok
+test_advanced_syntax_requires_adapter (test_prompt_tools.PromptCases.test_advanced_syntax_requires_adapter) ... ok
+test_ambiguous_target_requires_occurrence (test_prompt_tools.PromptCases.test_ambiguous_target_requires_occurrence) ... ok
+test_authorized_constraint_change (test_prompt_tools.PromptCases.test_authorized_constraint_change) ... ok
+test_blank_required_brand (test_prompt_tools.PromptCases.test_blank_required_brand) ... ok
+test_boolean_is_not_count (test_prompt_tools.PromptCases.test_boolean_is_not_count) ... ok
+test_candidate_output_does_not_overwrite_baseline (test_prompt_tools.PromptCases.test_candidate_output_does_not_overwrite_baseline) ... ok
+test_cli_failure_does_not_create_candidate (test_prompt_tools.PromptCases.test_cli_failure_does_not_create_candidate) ... ok
+test_constraint_loss_rejected (test_prompt_tools.PromptCases.test_constraint_loss_rejected) ... ok
+test_count_outside_range (test_prompt_tools.PromptCases.test_count_outside_range) ... ok
+test_duplicate_json_keys_rejected (test_prompt_tools.PromptCases.test_duplicate_json_keys_rejected) ... ok
+test_execution_needs_values (test_prompt_tools.PromptCases.test_execution_needs_values) ... ok
+test_explicit_rename (test_prompt_tools.PromptCases.test_explicit_rename) ... ok
+test_fixed_value_cannot_be_unrelated_edit (test_prompt_tools.PromptCases.test_fixed_value_cannot_be_unrelated_edit) ... ok
+test_fractional_occurrence_rejected (test_prompt_tools.PromptCases.test_fractional_occurrence_rejected) ... ok
+test_insert_and_delete (test_prompt_tools.PromptCases.test_insert_and_delete) ... ok
+test_local_fix_preserves_other_content (test_prompt_tools.PromptCases.test_local_fix_preserves_other_content) ... ok
+test_missing_authorization_quote (test_prompt_tools.PromptCases.test_missing_authorization_quote) ... ok
+test_missing_definition (test_prompt_tools.PromptCases.test_missing_definition) ... ok
+test_overlapping_edits_rejected (test_prompt_tools.PromptCases.test_overlapping_edits_rejected) ... ok
+test_overlapping_repeated_anchor_is_ambiguous (test_prompt_tools.PromptCases.test_overlapping_repeated_anchor_is_ambiguous) ... ok
+test_rename_cannot_be_deletion (test_prompt_tools.PromptCases.test_rename_cannot_be_deletion) ... ok
+test_stale_original_rejected (test_prompt_tools.PromptCases.test_stale_original_rejected) ... ok
+test_unapproved_variable_removal_rejected (test_prompt_tools.PromptCases.test_unapproved_variable_removal_rejected) ... ok
+test_unused_definition_is_only_warning (test_prompt_tools.PromptCases.test_unused_definition_is_only_warning) ... ok
+test_user_authorized_fixed_count (test_prompt_tools.PromptCases.test_user_authorized_fixed_count) ... ok
+test_valid_instance (test_prompt_tools.PromptCases.test_valid_instance) ... ok
+test_valid_unfilled_template (test_prompt_tools.PromptCases.test_valid_unfilled_template) ... ok
+test_value_dependency (test_prompt_tools.PromptCases.test_value_dependency) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.049s
+
+OK

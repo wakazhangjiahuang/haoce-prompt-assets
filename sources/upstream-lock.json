@@ -1,0 +1,117 @@
+{
+  "version": "0.9.0",
+  "verified_at": "2026-10-11",
+  "loading": "按任务读取相关文件；常规优化不依赖远端；不自动跟随默认分支",
+  "sources": [
+    {
+      "id": "linshenkx-prompt-optimizer",
+      "provided_url": "https://github.com/linshenku/PromptOptimizer",
+      "provided_url_status": "404_at_verification",
+      "identity": "confirmed_by_uploaded_archive_and_git_blob_hashes",
+      "repository": "linshenkx/prompt-optimizer",
+      "url": "https://github.com/linshenkx/prompt-optimizer",
+      "branch_at_verification": "develop",
+      "commit": "1f8cb19c2e506cb27dfff7fe971f65d71ea65863",
+      "package_version": "2.11.11",
+      "license": "AGPL-3.0-only",
+      "integration": "reference_only",
+      "mcp_status": "not_connected_by_this_upgrade",
+      "runtime_test_status": "not_run",
+      "files": [
+        {
+          "path": "README.md",
+          "use": "项目概览"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha": "fd2472b22844ae105ab3448d689433d6217dc7eb",
+          "use": "许可证"
+        },
+        {
+          "path": "package.json",
+          "git_blob_sha": "b6239e6535d37a92d6efa1cb5c9ae0d954ea10ef",
+          "use": "依赖与版本"
+        },
+        {
+          "path": "docs/user/mcp-server.md",
+          "git_blob_sha": "b18bdf2d31fc8f8befc627786099dca4f8a9091f",
+          "use": "MCP 使用与部署边界"
+        },
+        {
+          "path": "packages/mcp-server/src/index.ts",
+          "git_blob_sha": "11876625f265efff86d14e391590379ae649a9db",
+          "use": "实际工具注册与输入 Schema"
+        },
+        {
+          "path": "packages/mcp-server/src/adapters/parameter-adapter.ts",
+          "git_blob_sha": "f510935a1e29202a939266156a11153719085ab1",
+          "use": "输入校验"
+        },
+        {
+          "path": "packages/core/src/services/template/types.ts",
+          "git_blob_sha": "080c85fce01ee7e43f9f51ddaa93a4211d58aca7",
+          "use": "模板类型"
+        },
+        {
+          "path": "packages/core/src/services/evaluation/types.ts",
+          "git_blob_sha": "7b529e3765511853a8d09be72b9cef518822838a",
+          "use": "对照评价与证据结构"
+        },
+        {
+          "path": "packages/core/src/services/evaluation/rewrite-from-evaluation.ts",
+          "git_blob_sha": "7dc54c19e140682d891e54a961048c5a2ffbeecb",
+          "use": "评估反馈到定向修改的方法"
+        },
+        {
+          "path": "packages/core/src/services/evaluation/service.ts",
+          "git_blob_sha": "936cfdbe17a4ebfbe9548ee850387c8f07de84ec",
+          "use": "对照证据与约束检查"
+        },
+        {
+          "path": "packages/core/src/services/variable-extraction/service.ts",
+          "git_blob_sha": "d2c0807aa76d093d67bdd5209fce001c04961643",
+          "use": "变量提取与结构校验"
+        },
+        {
+          "path": "packages/core/src/services/history/types.ts",
+          "git_blob_sha": "c54e67651ff51d9757f845b3e4aeadb510e2ecb3",
+          "use": "版本链"
+        },
+        {
+          "path": "packages/core/src/services/template/default-templates/image-prompt-migration/migration.ts",
+          "git_blob_sha": "ef35002b7eb027a3ef846ba9880b1e08e6ad50bd",
+          "use": "图像迁移的适用范围"
+        },
+        {
+          "path": "packages/core/src/services/template/default-templates/iterate/iterate.ts",
+          "git_blob_sha": "0cc8b8bd00e5aba210eaa14d2eb2067ffea54226",
+          "use": "变量保留的适用边界"
+        }
+      ],
+      "archive_verification": {
+        "filename": "prompt-optimizer-develop.zip",
+        "sha256": "02b6f541110388c5646a56aa11e70eca114de39ced98fb6c8d2b03b197c7812e",
+        "commit": "1f8cb19c2e506cb27dfff7fe971f65d71ea65863",
+        "git_blob_files_compared": 1911,
+        "matched": 1911,
+        "missing": 0,
+        "modified": 0,
+        "extra": 0,
+        "verified_at": "2026-10-11"
+      }
+    }
+  ],
+  "private_assets": {
+    "owner": "wakazhangjiahuang",
+    "proposed_name": "haoce-prompt-assets",
+    "status": "upload_bundle_prepared_repository_not_created",
+    "confirmed_repository": null,
+    "access": "Use authorized GitHub connection after confirming repository and permissions",
+    "entrypoint": "KB-MANIFEST.json"
+  },
+  "adoption": {
+    "type": "independently_written_workflow_rules_and_offline_tools",
+    "upstream_code_imported": false,
+    "upstream_templates_imported": false
+  }
+}

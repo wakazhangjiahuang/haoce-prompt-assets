@@ -1,0 +1,29 @@
+{
+  "ok": false,
+  "scope": "static_contract",
+  "mode": "instance",
+  "prompt_sha256": "9a82743f2aa3d42424d8951ef7d7c0914b2fa63088c12bf6e1318e730fff16ba",
+  "variables": [
+    "主题",
+    "品牌"
+  ],
+  "errors": [
+    {
+      "code": "missing_required_value",
+      "name": "主题"
+    }
+  ],
+  "warnings": [],
+  "checks": [
+    {
+      "id": "per-item-limit",
+      "pass": true
+    },
+    {
+      "id": "no-fabrication",
+      "pass": true
+    }
+  ],
+  "semantic_review_required": true,
+  "model_run_performed": false
+}

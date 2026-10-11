@@ -1,0 +1,21 @@
+{
+  "base_sha256": "694c2b358218750e8d41b389d996546e4bde41f7977a2498ae03174161e328e9",
+  "patches": [
+    {
+      "op": "replace",
+      "old_text": "{{数量}}",
+      "new_text": "8",
+      "reason": "用户指定固定数量",
+      "evidence": "示范用户指令：数量固定8，品牌和主题仍每次填写"
+    }
+  ],
+  "authorized_changes": [
+    {
+      "kind": "variable",
+      "name": "数量",
+      "action": "fix",
+      "value": 8,
+      "quote": "数量固定8，品牌和主题仍每次填写"
+    }
+  ]
+}

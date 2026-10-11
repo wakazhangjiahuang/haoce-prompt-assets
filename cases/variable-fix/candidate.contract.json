@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "variables": {
+    "品牌": {
+      "type": "string"
+    },
+    "主题": {
+      "type": "string"
+    }
+  },
+  "rules": [
+    {
+      "id": "length",
+      "kind": "contains",
+      "text": "每条不超过50字"
+    },
+    {
+      "id": "facts",
+      "kind": "contains",
+      "text": "禁止编造产品事实"
+    }
+  ],
+  "fixed_values": {
+    "数量": 8
+  }
+}

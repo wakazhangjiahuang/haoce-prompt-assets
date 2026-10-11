@@ -1,0 +1,14 @@
+{
+  "base_sha256": "9596abb5715977e4123fd0a4312e8113b409fe79560f6a578a1406a71465a998",
+  "patches": [
+    {
+      "op": "replace",
+      "old_text": "通用水彩风格",
+      "occurrence": 2,
+      "new_text": "以本次上传参考图的可见线条、笔触和上色方式为准",
+      "reason": "仅修正第二组的泛化风格表达",
+      "evidence": "示范用户反馈：第二组不能使用笼统水彩标签"
+    }
+  ],
+  "authorized_changes": []
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "syntax": "mustache-simple",
+  "variables": {
+    "用途": {
+      "type": "string"
+    },
+    "主题方向": {
+      "type": "string"
+    },
+    "主体与主次": {
+      "type": "string"
+    },
+    "角色身份关系": {
+      "type": "string"
+    },
+    "构图要求": {
+      "type": "string"
+    },
+    "数量": {
+      "type": "integer",
+      "min": 1
+    },
+    "比例": {
+      "type": "string"
+    },
+    "分辨率与格式": {
+      "type": "string"
+    },
+    "背景": {
+      "type": "string"
+    },
+    "文字要求": {
+      "type": "string"
+    },
+    "补充要求": {
+      "type": "string",
+      "required": false,
+      "allow_empty": true
+    }
+  },
+  "rules": [
+    {
+      "id": "independent",
+      "kind": "contains",
+      "text": "每张独立输出"
+    },
+    {
+      "id": "no-grid",
+      "kind": "contains",
+      "text": "禁止合并、合集、九宫格"
+    }
+  ]
+}

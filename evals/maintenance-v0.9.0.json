@@ -1,0 +1,48 @@
+{
+  "version": "0.9.0",
+  "verified_at": "2026-10-11",
+  "offline_regression": {
+    "tests": 36,
+    "passed": 36,
+    "failed": 0,
+    "log": "unit-tests.log"
+  },
+  "template_checks": [
+    {
+      "template": "illustration",
+      "ok": true
+    },
+    {
+      "template": "seamless",
+      "ok": true
+    }
+  ],
+  "independent_use_cases": [
+    {
+      "id": "variables",
+      "passed": true,
+      "evidence_directory": "forward/variables",
+      "scope": "skill_behavior_and_static_contract"
+    },
+    {
+      "id": "local",
+      "passed": true,
+      "evidence_directory": "forward/local",
+      "scope": "exact_local_revision"
+    },
+    {
+      "id": "short",
+      "passed": true,
+      "characters": 70,
+      "evidence_file": "forward/short-prompt.txt",
+      "scope": "short_prompt_constraints"
+    }
+  ],
+  "verification_limits": {
+    "upstream_service_run": false,
+    "image_generation_test": false,
+    "general_quality_improvement_proven": false,
+    "remote_repository_connected": false
+  },
+  "provenance": "实际执行离线测试并检查独立使用样例；不包含生产模型输出对照"
+}

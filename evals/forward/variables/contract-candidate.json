@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "syntax": "mustache-simple",
+  "variables": {
+    "品牌": {
+      "type": "string",
+      "required": true
+    },
+    "主题": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "fixed_values": {
+    "数量": 8
+  },
+  "rules": [
+    {
+      "id": "per-item-limit",
+      "kind": "contains",
+      "text": "每条不超过50字"
+    },
+    {
+      "id": "no-fabrication",
+      "kind": "contains",
+      "text": "禁止编造产品事实"
+    }
+  ],
+  "relations": []
+}

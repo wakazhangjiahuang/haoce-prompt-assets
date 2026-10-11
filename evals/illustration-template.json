@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "scope": "static_contract",
+  "mode": "template",
+  "prompt_sha256": "02a809bf237643b08f0c6c0158635b701751920e1282d6d3d5b092cfb06d5126",
+  "variables": [
+    "主体与主次",
+    "主题方向",
+    "分辨率与格式",
+    "数量",
+    "文字要求",
+    "构图要求",
+    "比例",
+    "用途",
+    "背景",
+    "补充要求",
+    "角色身份关系"
+  ],
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "id": "independent",
+      "pass": true
+    },
+    {
+      "id": "no-grid",
+      "pass": true
+    }
+  ],
+  "semantic_review_required": true,
+  "model_run_performed": false
+}

@@ -1,0 +1,82 @@
+{
+  "case": "feedback-local",
+  "scope": "static_contract",
+  "result": {
+    "ok": true,
+    "scope": "static_contract",
+    "mode": "template",
+    "prompt_sha256": "168dbe119f3e0f3df9c801765f01d4bac666e0852679c16d724b319c591744a0",
+    "variables": [],
+    "errors": [],
+    "warnings": [],
+    "checks": [
+      {
+        "id": "count",
+        "pass": true
+      },
+      {
+        "id": "ratio",
+        "pass": true
+      },
+      {
+        "id": "bg",
+        "pass": true
+      },
+      {
+        "id": "role",
+        "pass": true
+      },
+      {
+        "id": "grid",
+        "pass": true
+      }
+    ],
+    "semantic_review_required": true,
+    "model_run_performed": false,
+    "base_sha256": "9596abb5715977e4123fd0a4312e8113b409fe79560f6a578a1406a71465a998",
+    "patches": [
+      {
+        "op": "replace",
+        "span": [
+          62,
+          68
+        ],
+        "reason": "仅修正第二组的泛化风格表达",
+        "evidence": "示范用户反馈：第二组不能使用笼统水彩标签"
+      }
+    ],
+    "effective_contract": {
+      "version": 1,
+      "variables": {},
+      "rules": [
+        {
+          "id": "count",
+          "kind": "contains",
+          "text": "10张"
+        },
+        {
+          "id": "ratio",
+          "kind": "contains",
+          "text": "1:1"
+        },
+        {
+          "id": "bg",
+          "kind": "contains",
+          "text": "白底"
+        },
+        {
+          "id": "role",
+          "kind": "contains",
+          "text": "不同原创角色"
+        },
+        {
+          "id": "grid",
+          "kind": "contains",
+          "text": "禁止合并、合集、九宫格"
+        }
+      ]
+    },
+    "authorization_review_required": true
+  },
+  "model_run_performed": false
+}
