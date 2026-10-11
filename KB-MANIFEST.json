@@ -1,0 +1,61 @@
+{
+  "version": "0.9.0",
+  "intended_repository": "wakazhangjiahuang/haoce-prompt-assets",
+  "remote_connection_status": "pending_user_creation_upload_and_readback",
+  "loading": "先读本入口，按本次任务读取必要文件，不全仓扫描",
+  "entrypoints": {
+    "illustration_prompt": [
+      "templates/illustration-series.txt",
+      "variables/illustration-series.contract.json"
+    ],
+    "seamless_prompt": [
+      "templates/seamless-series.txt",
+      "variables/seamless-series.contract.json"
+    ],
+    "contract_validation": [
+      "scripts/contract-tools.md",
+      "scripts/prompt_tools.py"
+    ],
+    "feedback_revision": [
+      "cases/feedback-local/case.json",
+      "cases/feedback-local/original.txt",
+      "cases/feedback-local/contract.json",
+      "cases/feedback-local/changes.json"
+    ],
+    "authorized_variable_change": [
+      "cases/variable-fix/case.json",
+      "cases/variable-fix/original.txt",
+      "cases/variable-fix/contract.json",
+      "cases/variable-fix/changes.json"
+    ],
+    "upstream_reference": [
+      "sources/upstream-lock.json"
+    ],
+    "maintenance_evidence": [
+      "evals/maintenance-v0.9.0.json"
+    ]
+  },
+  "asset_states": {
+    "templates": "starter_template",
+    "case_candidates": "candidate_static_checked",
+    "approved_masters": []
+  },
+  "quality_gates": [
+    "保留当前授权的硬约束",
+    "模板和执行实例分开校验",
+    "变更原话人工核对",
+    "候选不覆盖批准母版",
+    "有实际输出才做效果对照",
+    "图像画法核验需实际图像",
+    "保存状态需实际提交和回读"
+  ],
+  "capabilities": {
+    "offline_contract_check": true,
+    "anchored_revision": true,
+    "existing_run_record_check": true,
+    "automatic_model_run": false,
+    "automatic_visual_score": false,
+    "deployed_mcp": false,
+    "github_write_connection_verified": false
+  }
+}
